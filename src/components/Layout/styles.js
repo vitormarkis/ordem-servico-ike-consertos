@@ -79,7 +79,7 @@ export const Type = styled.div`
   > div:first-of-type {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 12px;
 
     p {
       &:not(:last-of-type) {
@@ -147,9 +147,37 @@ export const Type = styled.div`
   }
 `
 
-export const CustomerDetails = styled.div``
+export const CustomerDetails = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
 
-export const CellphoneDetails = styled.div``
+  > div {
+    display: flex;
+  }
+
+  p {
+    display: flex;
+
+    span {
+      display: block;
+      white-space: nowrap;
+      margin-right: 3px;
+    }
+
+    strong {
+      white-space: nowrap;
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #000;
+    }
+  }
+`
+
+export const CellphoneDetails = styled.div`
+  
+`
 
 export const Laudo = styled.div``
 

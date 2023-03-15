@@ -85,8 +85,39 @@ function Layout() {
             </p>
           </div>
         </Type>
-        <CustomerDetails></CustomerDetails>
-        <CellphoneDetails></CellphoneDetails>
+        <CustomerDetails>
+          <div>
+            <p style={{ flex: "5 0 0" }}>
+              <span>Nome:</span>
+              <strong style={{ marginRight: 6 }} />
+            </p>
+            <p style={{ flex: "2 0 0" }}>
+              <span>Telefone:</span>
+              <strong />
+            </p>
+          </div>
+          <p>
+            <span>Endereço:</span>
+            <strong />
+          </p>
+          <div>
+            <p style={{ flex: "2 0 0" }}>
+              <span>Cidade:</span>
+              <strong style={{ marginRight: 6 }} />
+            </p>
+            <p style={{ flex: "1 0 0" }}>
+              <span>CPF/CPNJ:</span>
+              <strong />
+            </p>
+          </div>
+          <p>
+            <span>E-mail:</span>
+            <strong />
+          </p>
+        </CustomerDetails>
+        <CellphoneDetails>
+          
+        </CellphoneDetails>
         <Laudo></Laudo>
         <CondicoesDeServico></CondicoesDeServico>
       </OS>
