@@ -26,12 +26,14 @@ export const Container = styled.div`
 
 export const OS = styled.div`
   border: 1px solid #000;
-  padding: 24px;
   font-size: 12px;
 `
 
 export const Cabecalho = styled.div`
+  padding: 24px;
   display: flex;
+
+  border-bottom: 1px solid #000;
 `
 export const Logo = styled.div`
   flex: 5 0 0;
@@ -72,8 +74,9 @@ export const Contato = styled.div`
 `
 
 export const Type = styled.div`
+  border-bottom: 1px solid #000;
+  padding: 24px;
   display: flex;
-  margin-top: 32px;
   justify-content: space-between;
 
   > div:first-of-type {
@@ -148,10 +151,11 @@ export const Type = styled.div`
 `
 
 export const CustomerDetails = styled.div`
+  padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 24px;
+  border-bottom: 1px solid #000;
 
   > div {
     display: flex;
@@ -175,10 +179,98 @@ export const CustomerDetails = styled.div`
   }
 `
 
-export const CellphoneDetails = styled.div`
-  
+export const CellphoneProblem = styled.div`
+  border-bottom: 1px solid #000;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  p {
+    display: flex;
+    span {
+      display: block;
+      margin-right: 6px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+  }
+
+  strong {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #000;
+  }
+`
+
+export const CellphoneInfo = styled.div`
+  display: flex;
+  border-bottom: 1px solid #000;
+
+  > div:nth-of-type(1) {
+    padding: 24px;
+    flex: 0 0 auto;
+    display: flex;
+    border-right: 1px solid #000;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+
+        i {
+          display: block;
+          width: 16px;
+          height: 16px;
+          border: 1px solid #000;
+        }
+
+        span {
+          display: block;
+          margin-left: 3px;
+        }
+      }
+    }
+  }
+
+  > div:nth-of-type(2) {
+    padding: 24px;
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+      display: flex;
+
+      span {
+        margin-right: 12px;
+      }
+
+      strong {
+        width: 100%;
+        white-space: nowrap;
+        border-bottom: 1px solid #000;
+      }
+    }
+  }
 `
 
 export const Laudo = styled.div``
 
-export const CondicoesDeServico = styled.div``
+export const CondicoesDeServico = styled.div`
+  padding: 24px;
+  ol {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    li {
+      font-size: 10px;
+    }
+  }
+`
