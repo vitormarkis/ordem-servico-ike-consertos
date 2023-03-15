@@ -78,6 +78,9 @@ export const Type = styled.div`
 
   > div:first-of-type {
     display: flex;
+    flex-direction: column;
+    gap: 6px;
+
     p {
       &:not(:last-of-type) {
         margin-right: 12px;
@@ -99,7 +102,7 @@ export const Type = styled.div`
 
     ul {
       display: flex;
-      
+
       li {
         &:not(:last-of-type) {
           margin-right: 12px;
@@ -124,12 +127,21 @@ export const Type = styled.div`
     }
   }
 
-  >div:nth-of-type(3) {
+  > div:nth-of-type(3) {
     display: flex;
+    align-items: center;
     p {
+      height: 16px;
       display: flex;
       span {
-        margin-right: 6px;
+        display: block;
+      }
+
+      strong {
+        display: block;
+        width: 60px;
+        height: 100%;
+        border-bottom: 1px solid #000;
       }
     }
   }

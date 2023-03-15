@@ -79,7 +79,10 @@ function Layout() {
             </ul>
           </div>
           <div>
-            <p><span>Nº:</span> <Underline width={60} /></p>
+            <p>
+              <span>Nº:</span>
+              <strong />
+            </p>
           </div>
         </Type>
         <CustomerDetails></CustomerDetails>
